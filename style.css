@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: aqua;
+    height: 35em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    float: left;
+    height: 10em;
+    /* background-color: rgb(213, 24, 255); */
+
+}
+
+
+#foot {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1em;
+    padding: 1em;
+}
+
+#foot>img {
+    width: 80px;
+    height: 80px;
+    float: right;
+
+}
+
+#img1 {
+    filter: hue-rotate(600deg);
+}
+
+#img2 {
+    filter: hue-rotate(500deg);
+
+}
+
+#img3 {
+    /* filter: hue-rotate(40deg); */
+    filter: hue-rotate(642.6deg);
+}
+
+#img1:hover {
+    height: 100px;
+    width: 90px;
+}
+
+#img2:hover {
+    height: 100px;
+    width: 90px;
+}
+
+#img3:hover {
+    height: 100px;
+    width: 90px;
+}

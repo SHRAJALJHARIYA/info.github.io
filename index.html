@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coca-cola theme change</title>
+    <link rel="stylesheet" href="style.css" class="html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            background-color: aqua;
+            height: 35em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main {
+            float: left;
+            height: 10em;
+
+        }
+
+
+        #foot {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 1em;
+            padding: 1em;
+        }
+
+        #foot>img {
+            width: 100px;
+            height: 100px;
+            float: right;
+
+        }
+
+        #img1 {
+            filter: hue-rotate(600deg);
+        }
+
+        #img2 {
+            filter: hue-rotate(500deg);
+
+        }
+
+        #img3 {
+            filter: hue-rotate(40deg);
+            filter: hue-rotate(642.6deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="section1">
+            <img id="main" onclick="changeHue(this)" src="can.png">
+        </div>
+
+    </div>
+    <footer id="foot" class="footer">
+        <img id="img1" onclick="changeHue1()" src="can.png">
+        <img id="img2" onclick="changeHue2()" src="can.png">
+        <img id="img3" onclick="changeHue3()" src="can.png">
+    </footer>
+</body>
+<script>
+    // function color(Element) {
+    //     document.getElementById("main").styel.hueRotate = "400";
+    // }
+    // let c1 = document.querySelector("img1");
+    // let c2 = document.querySelector("img2");
+    // let c3 = document.querySelector("img3");
+
+    // c1.addEventListener("Click", color(this));
+
+    // function color() {
+
+    // }
+    // <img id="main" src="can.png" onclick="changeHue()">
+    let a = document.getElementById("container");
+    let foot = document.getElementById("foot");
+
+    function changeHue1() {
+        let img = document.getElementById("main");
+        img.style.filter = "hue-rotate(600deg)";
+        a.style.backgroundColor = "red";
+        foot.style.backgroundColor = "blue";
+
+    }
+    function changeHue2() {
+        let img = document.getElementById("main");
+        img.style.filter = "hue-rotate(500deg)";
+        a.style.backgroundColor = "rgb(213, 24, 255)";
+        foot.style.backgroundColor = "red";
+    }
+    function changeHue3() {
+        let img = document.getElementById("main");
+        img.style.filter = "hue-rotate(642.6deg)";
+        a.style.backgroundColor = "yellow";
+        foot.style.backgroundColor = "lime";
+    }
+</script>
+
+
+
+</script>
+
+
+</html>
